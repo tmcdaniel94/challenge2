@@ -1,13 +1,13 @@
+:root {
+    --light: #EDE7F5;
+    --mid: #8EE5EA;
+    --neutral: #38414A;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-:root {
-    --light: #F5DBFF;
-    --mid: teal;
-    --neutral: #424E5A;
 }
 
 .header {
@@ -21,13 +21,13 @@
 }
 
 h1 {
+    font-family: 'Calibri', Helvetica, sans-serif;
     font-size: 250%;
     color: var(--neutral);
-    background-color: var(--mid);
+
     display: flex;
     justify-content: left;
     align-items: center;
-    z-index: 0;
 }
 
 h1::before {
@@ -35,8 +35,18 @@ h1::before {
     background-color: var(--mid);
     position: absolute;
     height: 78%;
-    width: 38%;
+    width: 40%;
     left: 0;
+    z-index: -1;
+}
+
+h1::after {
+    content: "";
+    background-color: var(--mid);
+    position: absolute;
+    height: 78%;
+    width: 40%;
+    left: 6%;
     z-index: -1;
 }
 
@@ -45,18 +55,76 @@ nav {
    
 }
 
-ul {
+nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-li {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 100%;
+nav li {
+    font-family: 'Calibri', Helvetica, sans-serif;
+    font-size: 120%;
     color: var(--mid);
     display: inline-block;
     text-decoration-line: underline;
-    padding: 2%;
+    padding: 10% 2% 0% 2%;
+    margin-left: auto;
+}
+
+.main {
+    background-color: var(--light);
+
+}
+
+h2 {
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    color: var(--neutral);
+    width: 30%;
+    margin: 5%;
+    padding-left: 5%;
+    padding-right: 2%;
+    margin-right: auto;
+}
+
+.about {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about p {
+    display: flex;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    color: var(--neutral);
+    width: 62%;
+    padding-top: 5%;
+    padding-right: 5%;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    /*position: relative;
+    justify-content: flex-start;
+    margin-left: auto;
+    padding-left: 10%;*/
+}
+
+.contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    float: inline-end;
+    width: 70%;
+    padding-right: 5%;
+}
+
+.contact li {
+    display: inline-block;
+    float: right;
+    position: relative;
+    font-family: 'Calibri', Helvetica, sans-serif;
+    font-size: 100%;
+    color: var(--neutral);
+    text-decoration: underline;
     margin-left: auto;
 }
