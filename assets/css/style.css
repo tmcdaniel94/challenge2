@@ -107,7 +107,7 @@ h2 {
 }
 
 .about p {
-    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-family: 'Calibri', Helvetica, sans-serif;
     font-size: 100%;
     line-height: 115%;
     color: var(--neutral);
@@ -127,58 +127,86 @@ h2 {
     top: 13%;
 }
 
+h3 {
+    font-family: 'Calibri', Helvetica, sans-serif;
+    font-size: 170%;
+    color: var(--neutral);
+}
+
 .work {
     display: flex;
     position: relative;
     width: 100%;
+    padding-top: 3%;
 }
 
 .work::after {
     content: "";
     border-left: 3px solid var(--neutral);
-    height: 70%;
+    height: 90%;
     position: absolute;
     align-content: center;
     left: 25%;
-    top: 26%;
+    top: 8%;
+}
+
+.imgbox {
+    display: flex;
+    position: relative;
+    max-width: 66%;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    margin: 1% 5% 2% 0%;
+    border: 4px solid var(--mid);
+}
+
+.imgid {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    margin: 0;
+    padding: 2% 3%;
+    height: auto;
+    background-color: var(--mid);
 }
 
 .contact {
     display: flex;
     position: relative;
     align-items: center;
-    /*position: relative;
-    justify-content: flex-start;
-    margin-left: auto;
-    padding-left: 10%;*/
+    padding-top: 3%;
 }
 
 .contact ul {
     display: flex;
     flex-wrap: wrap;
     float: inline-end;
+    align-content: center;
     width: 70%;
     padding-right: 5%;
 }
 
-.contact ul::before {
-    /*content: "";
+.contact::after {
+    content: "";
     border-left: 3px solid var(--neutral);
-    height: 15%;
+    height: 70%;
     position: absolute;
+    align-content: center;
     left: 25%;
-    top: 64%;*/
+    top: 20%;
 }
 
 .contact li {
     display: inline-block;
-    float: right;
     position: relative;
     font-family: 'Calibri', Helvetica, sans-serif;
     font-size: 100%;
     color: var(--neutral);
     text-decoration: underline;
-    margin-left: auto;
+    padding-right: 8%;
 }
 
 footer {
