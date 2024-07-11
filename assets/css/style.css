@@ -1,7 +1,7 @@
 :root {
     --light: #EDE7F5;
-    --mid: #8EE5EA;
-    --neutral: #38414A;
+    --mid: #D2B1FF;
+    --neutral: #252941;
 }
 
 * {
@@ -21,10 +21,9 @@
 }
 
 h1 {
-    font-family: 'Calibri', Helvetica, sans-serif;
-    font-size: 270%;
+    font-family: 'Fontin', Helvetica, sans-serif;
+    font-size: 320%;
     color: var(--neutral);
-
     display: flex;
     justify-content: left;
     align-items: center;
@@ -51,7 +50,7 @@ h1::after {
 }
 
 nav {
-    width: 50%;
+    width: 40%;
    
 }
 
@@ -62,7 +61,7 @@ nav ul {
 }
 
 nav li {
-    font-family: 'Calibri', Helvetica, sans-serif;
+    font-family: 'Fontin', Helvetica, sans-serif;
     font-size: 120%;
     color: var(--mid);
     display: inline-block;
@@ -71,11 +70,14 @@ nav li {
     margin-left: auto;
 }
 
+nav a:visited {
+    color: var(--light);
+}
+
 .topimage {
     position: relative;
     top: 0;
     width: 100%;
-    height: 200px;
     background-color: darkblue;
 }
 
@@ -89,7 +91,7 @@ nav li {
 }
 
 h2 {
-    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-family: 'Fontin', Helvetica, sans-serif;
     font-size: 250%;
     color: var(--neutral);
     width: 20%;
@@ -107,7 +109,7 @@ h2 {
 }
 
 .about p {
-    font-family: 'Calibri', Helvetica, sans-serif;
+    font-family: 'Roboto', Helvetica, sans-serif;
     font-size: 100%;
     line-height: 115%;
     color: var(--neutral);
@@ -128,7 +130,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Calibri', Helvetica, sans-serif;
+    font-family: 'Fontin', Helvetica, sans-serif;
     font-size: 170%;
     color: var(--neutral);
 }
@@ -187,6 +189,7 @@ h3 {
     align-content: center;
     width: 70%;
     padding-right: 5%;
+    padding-bottom: 2%;
 }
 
 .contact::after {
@@ -199,10 +202,14 @@ h3 {
     top: 20%;
 }
 
+.contact a:visited {
+    color: darkorchid;
+}
+
 .contact li {
     display: inline-block;
     position: relative;
-    font-family: 'Calibri', Helvetica, sans-serif;
+    font-family: 'Roboto', Helvetica, sans-serif;
     font-size: 100%;
     color: var(--neutral);
     text-decoration: underline;
