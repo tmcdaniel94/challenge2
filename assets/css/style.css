@@ -11,6 +11,8 @@
     scroll-behavior: smooth;
 }
 
+/* Header, Nav, and Banner */
+
 .header {
     display: flex;
     position: relative;
@@ -33,9 +35,9 @@ h1 {
     display: flex;
     justify-content: left;
     align-items: center;
-    width: 45%;
+    width: 50%;
     margin-left: 0;
-    padding-right: 20px;
+    padding-right: 15px;
     font-family: 'Fontin', Helvetica, sans-serif;
     font-size: 320%;
     color: var(--neutral);
@@ -62,7 +64,7 @@ h1::before {
 }*/
 
 nav {
-    width: 40%;
+    width: 35%;
    
 }
 
@@ -85,6 +87,8 @@ nav li {
 nav a:visited {
     color: var(--light);
 }
+
+/* Body */
 
 .topimage {
     position: relative;
@@ -111,6 +115,8 @@ h2 {
     padding-right: 2%;
     text-align: right;
 }
+
+/* About Section */
 
 .about {
     display: flex;
@@ -140,6 +146,8 @@ h2 {
     left: 25%;
     top: 13%;
 }
+
+/* Work Section */
 
 h3 {
     font-family: 'Fontin', Helvetica, sans-serif;
@@ -186,6 +194,8 @@ h3 {
     height: auto;
     background-color: var(--mid);
 }
+
+/* Contact Section */
 
 .contact {
     display: flex;
@@ -235,3 +245,29 @@ h3 {
 footer {
     margin: 10%;
 }
+
+
+/* Media Queries */
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 250%;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 768px) {
+    
+    h1 {
+        font-size: 225%;
+    }
+
+    h2 {
+        font-size: 200%;
+        text-align: center;
+    }
+
+    .contact ul {
+        justify-content: center;
+    }
