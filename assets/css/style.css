@@ -8,25 +8,37 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .header {
     display: flex;
+    position: relative;
     padding: 2% 4%;
     justify-content: space-between;
     align-items: center;
     background-color: var(--neutral);
-    position: relative;
     z-index: 1;
 }
 
+.profilepic {
+    position: relative;
+    max-width: 10%;
+    border-radius: 100%;
+    padding-right: 1%;
+    margin-left: 0;
+}
+
 h1 {
-    font-family: 'Fontin', Helvetica, sans-serif;
-    font-size: 320%;
-    color: var(--neutral);
     display: flex;
     justify-content: left;
     align-items: center;
+    width: 45%;
+    margin-left: 0;
+    padding-right: 20px;
+    font-family: 'Fontin', Helvetica, sans-serif;
+    font-size: 320%;
+    color: var(--neutral);
 }
 
 h1::before {
@@ -34,12 +46,12 @@ h1::before {
     background-color: var(--mid);
     position: absolute;
     height: 78%;
-    width: 40%;
+    width: 45%;
     left: 0;
     z-index: -1;
 }
 
-h1::after {
+/*h1::after {
     content: "";
     background-color: var(--mid);
     position: absolute;
@@ -47,7 +59,7 @@ h1::after {
     width: 40%;
     left: 6%;
     z-index: -1;
-}
+}*/
 
 nav {
     width: 40%;
@@ -200,6 +212,10 @@ h3 {
     align-content: center;
     left: 25%;
     top: 20%;
+}
+
+.contact a:link {
+    color: var(--neutral);
 }
 
 .contact a:visited {
