@@ -172,6 +172,8 @@ h3 {
     top: 8%;
 }
 
+/* Big Image */
+
 .imgbox {
     display: flex;
     position: relative;
@@ -187,12 +189,60 @@ h3 {
 
 .imgid {
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 0;
     margin: 0;
     padding: 2% 3%;
     height: auto;
     background-color: var(--mid);
+}
+
+/* Small Images */
+
+.worksmall {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 69%;
+    left: 30%;
+}
+
+.smallflex {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.smallimgflex2 {
+    display: flex;
+    position: relative;
+    width: 50%;
+}
+
+h4 {
+    font-family: 'Fontin', Helvetica, sans-serif;
+    font-size: 120%;
+}
+
+.imgid2 {
+    position: absolute;
+    top: 68%;
+    left: 0;
+    margin: 0;
+    padding: 2% 3%;
+    height: auto;
+    background-color: var(--mid);
+    z-index: 1;
+}
+
+.imgsmall {
+    position: relative;
+    width: 92%;
+    height: auto;
+    margin: 1% 5% 2% 0%;
+    border: 4px solid var(--mid);
 }
 
 /* Contact Section */
