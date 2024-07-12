@@ -16,5 +16,10 @@ Code created from scratch with UT Bootcamp's project model in mind.
 
 MIT
 
-## Links to Repository and Live Site
+## Link to Live Site
 
+https://tmcdaniel94.github.io/challenge2/
+
+## Screenshot of Webpage
+
+![Getting Started](./assets/images/screenshot.png)

@@ -53,19 +53,8 @@ h1::before {
     z-index: -1;
 }
 
-/*h1::after {
-    content: "";
-    background-color: var(--mid);
-    position: absolute;
-    height: 78%;
-    width: 40%;
-    left: 6%;
-    z-index: -1;
-}*/
-
 nav {
     width: 35%;
-   
 }
 
 nav ul {
@@ -82,6 +71,10 @@ nav li {
     text-decoration-line: underline;
     padding: 10% 2% 0% 2%;
     margin-left: auto;
+}
+
+nav li a:link {
+    color: var(--mid);
 }
 
 nav a:visited {
